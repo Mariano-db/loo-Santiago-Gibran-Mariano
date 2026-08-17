@@ -118,7 +118,7 @@ public class calculadora extends JFrame implements ActionListener {
              pantalla.setText(String.valueOf(resultado));
             nuevaEntrada = true;
         } 
-//#endregion la cosa de los puntos decimales es por lo del binario, como no se puede calcular exacto los numeros los pone como aproximaciones, la solucion es igular la variable de resultado, y luego multiplciarla por 100000000 y lo dividirla por ese mismo numero, despues usas la funcion de math.round. si haces eso antes de la linea de codigo 118, se recorren 8 decimales y no te da un numero todo horrible      
+//#endregion la cosa de los puntos decimales es por lo del binario, como no se puede calcular exacto los numeros los pone como aproximaciones, la solucion es igular la variable de resultado, y luego multiplciarla por 100000000 y lo dividirla por ese mismo numero, despues usas la funcion de math.round. si haces eso antes de la linea de codigo 118, se recorren 8 decimales y no te da un numero todo horrible.      
 
                     
 
