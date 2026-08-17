@@ -37,6 +37,7 @@ public class calculadora extends JFrame implements ActionListener {
     private double primerNumero = 0;
     private String operador = "";
     private boolean nuevaEntrada = true;
+    private double resultadoemergencia = 0 ;
 
     public calculadora () {
         setTitle("calculadora");
@@ -99,6 +100,24 @@ public class calculadora extends JFrame implements ActionListener {
         else if (comando.equals("=")) {
             double segundoNumero = Double.parseDouble(pantalla.getText());
             double resultado = 0;
+
+            //experimento 1 guardaqr resultado anterior en otra varablke para rescatarlo luego
+            resultadoemergencia = primerNumero;
+            if (operador.equals("/") && segundoNumero == 0) {
+                pantalla.setText("Error division entre 0");
+                nuevaEntrada = true;
+                Timer espera = new Timer(1000, new ActionListener(){
+                    @Override
+                    public void actionPerformed(ActionEvent e){
+                        pantalla.setText("Ingrese otro numero");
+                    }
+                });
+                espera.setRepeats(false);
+                espera.start();
+                primerNumero = resultadoemergencia;
+                nuevaEntrada = true;
+                return;
+            }
 
             switch (operador) {
                 case "+":
