@@ -20,12 +20,12 @@ class Operaciones {
     }
 
     public static double multiplicar(double a, double b) {
-        return 0;
+        return a * b;
     }
 
     public static double dividir(double a, double b) {
         // aqui va el el codee
-        return 0;
+        return a / b;
     }
 }
 
