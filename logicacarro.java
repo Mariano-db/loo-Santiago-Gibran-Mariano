@@ -1,5 +1,3 @@
-package com.astore.modelo;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
