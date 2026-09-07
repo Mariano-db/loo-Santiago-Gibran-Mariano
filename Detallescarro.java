@@ -2,10 +2,10 @@ import java.math.BigDecimal;
 
 public class Detallescarro {
 
-    private int id;
-    private Producto producto;
-    private int cantidad;
-    private BigDecimal precioUnitario;
+    public int id;
+    public Producto producto;
+    public int cantidad;
+    public BigDecimal precioUnitario;
 
     public Detallescarro(
             Producto producto,
