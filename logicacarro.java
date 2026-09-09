@@ -5,10 +5,10 @@ import java.util.List;
 
 public class logicacarro {
 
-    private int id;
-    private LocalDateTime fechaCreacion;
-    private Estadocarro estado;
-    private Cliente cliente;
+    public int id;
+    public LocalDateTime fechaCreacion;
+    public Estadocarro estado;
+    public Cliente cliente;
 
     private List<Detallescarro> detalles;
 
