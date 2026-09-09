@@ -1,5 +1,3 @@
-import astore.catalogo.Producto;
-
 public class Itemcarrito {
 
     private Producto producto;
