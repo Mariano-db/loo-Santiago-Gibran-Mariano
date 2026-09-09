@@ -1,4 +1,4 @@
-public class Reglaporproducto extends ReglaDescuento {
+public class Reglaporproducto extends Regladescuento {
 
     public Reglaporproducto() {
     }

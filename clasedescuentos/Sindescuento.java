@@ -1,4 +1,4 @@
-public class Sindescuento implements EstrategiaDescuento {
+public class Sindescuento implements Estrategiadescuento {
 
     public Sindescuento() {
     }
