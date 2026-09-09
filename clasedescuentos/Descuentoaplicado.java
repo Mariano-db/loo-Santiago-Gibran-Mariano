@@ -3,7 +3,7 @@ public class Descuentoaplicado {
     private Long id;
     private double monto;
     private String descripcion;
-    private ReglaDescuento regla;
+    private Regladescuento regla;
 
     public Descuentoaplicado() {
     }
@@ -32,11 +32,11 @@ public class Descuentoaplicado {
         this.descripcion = descripcion;
     }
 
-    public ReglaDescuento getRegla() {
+    public Regladescuento getRegla() {
         return regla;
     }
 
-    public void setRegla(ReglaDescuento regla) {
+    public void setRegla(Regladescuento regla) {
         this.regla = regla;
     }
 }

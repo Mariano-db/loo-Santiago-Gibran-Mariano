@@ -31,19 +31,19 @@ public class Cupon {
         this.codigo = codigo;
     }
 
-    public LocalDate getFechaInicio() {
+    public LocalDate getFechainicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(LocalDate fechaInicio) {
+    public void setFechainicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public LocalDate getFechaFin() {
+    public LocalDate getFechafin() {
         return fechaFin;
     }
 
-    public void setFechaFin(LocalDate fechaFin) {
+    public void setFechafin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
 

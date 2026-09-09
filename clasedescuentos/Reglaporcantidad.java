@@ -1,4 +1,4 @@
-public class Reglaporcantidad extends ReglaDescuento {
+public class Reglaporcantidad extends Regladescuento {
 
     public Reglaporcantidad() {
     }

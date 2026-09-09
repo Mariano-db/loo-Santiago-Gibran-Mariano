@@ -1,4 +1,4 @@
-public class Descuentomontofijo implements EstrategiaDescuento {
+public class Descuentomontofijo implements Estrategiadescuento {
 
     private double monto;
 
@@ -6,7 +6,7 @@ public class Descuentomontofijo implements EstrategiaDescuento {
     }
 
     @Override
-    public double calcularDescuento(double montoBase) {
+    public double calculardescuento(double montoBase) {
         return this.monto;
     }
 

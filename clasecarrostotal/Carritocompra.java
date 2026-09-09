@@ -19,18 +19,18 @@ public class Carritocompra {
     public void eliminarProducto(int indice) {
     }
 
-    public double totalConDescuento() {
+    public double totalCondescuento() {
         return 0;
     }
 
-    public double calcularTotal() {
+    public double calculartotal() {
         return 0;
     }
 
-    public void validarNoVacio() {
+    public void validarNovacio() {
     }
 
-    public Pedido convertirAPedido() {
+    public Pedido convertirApedido() {
         return null;
     }
 
@@ -58,35 +58,35 @@ public class Carritocompra {
         this.items = items;
     }
 
-    public List<DetalleCarrito> getDetalles() {
+    public List<Detallecarrito> getDetalles() {
         return detalles;
     }
 
-    public void setDetalles(List<DetalleCarrito> detalles) {
+    public void setDetalles(List<Detallecarrito> detalles) {
         this.detalles = detalles;
     }
 
-    public LocalDateTime getFechaCreacion() {
+    public LocalDateTime getFechacreacion() {
         return fechaCreacion;
     }
 
-    public void setFechaCreacion(LocalDateTime fechaCreacion) {
+    public void setFechacreacion(LocalDateTime fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public EstadoCarrito getEstado() {
+    public Estadocarrito getEstado() {
         return estado;
     }
 
-    public void setEstado(EstadoCarrito estado) {
+    public void setEstado(Estadocarrito estado) {
         this.estado = estado;
     }
 
-    public EstrategiaDescuento getEstrategiaDescuento() {
+    public Estrategiadescuento getEstrategiadescuento() {
         return estrategiaDescuento;
     }
 
-    public void setEstrategiaDescuento(EstrategiaDescuento estrategiaDescuento) {
+    public void setEstrategiadescuento(Estrategiadescuento estrategiaDescuento) {
         this.estrategiaDescuento = estrategiaDescuento;
     }
 }

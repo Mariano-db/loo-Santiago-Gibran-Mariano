@@ -12,11 +12,11 @@ public class Itemcarrito {
         return (precioUnitario * cantidad) - descuentoLinea;
     }
 
-    public void incrementarCantidad(int cantidad) {
+    public void incrementarcantidad(int cantidad) {
         this.cantidad += cantidad;
     }
 
-    public void cambiarCantidad(int cantidad) {
+    public void cambiarcantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
@@ -36,19 +36,19 @@ public class Itemcarrito {
         this.cantidad = cantidad;
     }
 
-    public double getPrecioUnitario() {
+    public double getPreciounitario() {
         return precioUnitario;
     }
 
-    public void setPrecioUnitario(double precioUnitario) {
+    public void setPreciounitario(double precioUnitario) {
         this.precioUnitario = precioUnitario;
     }
 
-    public double getDescuentoLinea() {
+    public double getDescuentolinea() {
         return descuentoLinea;
     }
 
-    public void setDescuentoLinea(double descuentoLinea) {
+    public void setDescuentolinea(double descuentoLinea) {
         this.descuentoLinea = descuentoLinea;
     }
 }

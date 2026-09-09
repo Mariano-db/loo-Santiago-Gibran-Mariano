@@ -1,6 +1,4 @@
-package astore.descuentos;
-
-public class Reglaporcupon extends ReglaDescuento {
+public class Reglaporcupon extends Regladescuento {
 
     private Cupon cupon;
 

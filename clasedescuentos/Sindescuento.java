@@ -4,7 +4,7 @@ public class Sindescuento implements EstrategiaDescuento {
     }
 
     @Override
-    public double calcularDescuento(double monto) {
+    public double calculardescuento(double monto) {
         return 0;
     }
 }

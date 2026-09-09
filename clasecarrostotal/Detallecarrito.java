@@ -5,7 +5,7 @@ public class Detallecarrito {
     private int cantidad;
     private double precioUnitario;
 
-    public DetalleCarrito() {
+    public Detallecarrito() {
     }
 
     public double subtotal() {
@@ -36,11 +36,11 @@ public class Detallecarrito {
         this.cantidad = cantidad;
     }
 
-    public double getPrecioUnitario() {
+    public double getPreciounitario() {
         return precioUnitario;
     }
 
-    public void setPrecioUnitario(double precioUnitario) {
+    public void setPreciounitario(double precioUnitario) {
         this.precioUnitario = precioUnitario;
     }
 }
