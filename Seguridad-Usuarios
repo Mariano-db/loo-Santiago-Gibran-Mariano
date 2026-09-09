@@ -1,3 +1,9 @@
+package com.anahuac.astore.seguridad;
+
+import java.util.EnumSet;
+import java.util.Set;
+
+
 public class Administrador extends Usuario {
 
     public Administrador(String id, String nombre, String username, String email,
@@ -12,6 +18,6 @@ public class Administrador extends Usuario {
 
     @Override
     public Set<Permiso> permisosBase() {
-        return EnumSet.allOf(Permiso.class);
+        return EnumSet.allOf(Permiso.class);  
     }
 }
