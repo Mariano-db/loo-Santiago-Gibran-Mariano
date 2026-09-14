@@ -1,11 +1,11 @@
 public class Carritocompra {
     private Long id;
     private Cliente cliente;
-    private List<ItemCarrito> items = new ArrayList<>();
-    private List<DetalleCarrito> detalles = new ArrayList<>();
+    private List<Itemcarrito> items = new ArrayList<>();
+    private List<Detallecarrito> detalles = new ArrayList<>();
     private LocalDateTime fechaCreacion;
-    private EstadoCarrito estado;
-    private EstrategiaDescuento estrategiaDescuento;
+    private Estadocarrito estado;
+    private Estrategiadescuento estrategiaDescuento;
 
     public Carritocompra() {
     }
