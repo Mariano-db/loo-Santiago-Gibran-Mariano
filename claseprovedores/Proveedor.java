@@ -9,7 +9,7 @@ public class Proveedor {
     private String correo;
     private boolean activo;
     private List<Suministro> suministros = new ArrayList<>();
-    private List<OrdenCompra> ordenesCompra = new ArrayList<>();
+    private List<Ordencompra> ordenesCompra = new ArrayList<>();
 
     public Proveedor() {
     }
@@ -70,7 +70,7 @@ public class Proveedor {
         this.suministros = suministros;
     }
 
-    public List<OrdenCompra> getOrdenescompra() {
+    public List<Ordencompra> getOrdenescompra() {
         return ordenesCompra;
     }
 
