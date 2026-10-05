@@ -149,4 +149,4 @@ Solo `PagoEfectivo` tiene lógica; tarjeta, transferencia y PayPal devuelven `fa
 
 ## Equipo
 
-Proyecto colaborativo — Santiago, Gibran y Mariano (Universidad Anáhuac Cancún).
+Proyecto colaborativo — Santiago, Gibran, Montufar y Mariano (Universidad Anáhuac Cancún).
