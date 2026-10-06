@@ -1,0 +1,8 @@
+Administrador inicial (solo para desarrollo/pruebas):
+  usuario: admin
+  contrasena: Astore731638x
+Cambiala o borra este archivo cuando haya credenciales reales.
+
+Cliente de prueba (rol CLIENTE, sin privilegios de administrador):
+  usuario: cliente
+  contrasena: Cliente269555x

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "rol": "ADMINISTRADOR",
+    "nombre": "Administrador A-Store",
+    "username": "admin",
+    "email": "admin@astore.local",
+    "passwordHash": "1V4sJqteGJB1sntbrtedpA==:vMynwo/sNBKKsXnPr7K7ViRG/tTUJxaaAkCt8MDcTYY=",
+    "telefono": null,
+    "activo": true
+  },
+  {
+    "id": 2,
+    "rol": "CLIENTE",
+    "nombre": "Cliente de Prueba",
+    "username": "cliente",
+    "email": "cliente@astore.local",
+    "passwordHash": "8OsUaXy+czU4wTb/k/1y8Q==:7MG1g6nwJE2lY8jHe4YAKLx6eNAQzoBeXao2tFlCRjs=",
+    "telefono": null,
+    "activo": true,
+    "rfc": null,
+    "puntosFidelidad": 0
+  }
+]

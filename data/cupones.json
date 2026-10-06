@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "codigo": "BIENVENIDO10",
+    "tipo": "PORCENTAJE",
+    "valor": 10,
+    "fechaInicio": null,
+    "fechaFin": null,
+    "compraMinima": 0,
+    "usosMaximos": 0,
+    "usosActuales": 0,
+    "activo": true
+  }
+]
