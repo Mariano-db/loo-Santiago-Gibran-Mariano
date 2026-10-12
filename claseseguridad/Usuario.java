@@ -1,5 +1,7 @@
 package claseseguridad;
 
+import Exepciones.AccesoDenegadoException;
+import Utils.HashUtil;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,34 +12,70 @@ public abstract class Usuario {
     private String username;
     private String email;
     private String passwordHash;
+    private String sal;
     private String telefono;
     private Rol rol;
     private Set<Permiso> permisos = new HashSet<>();
     private boolean activo;
+    private boolean sesionActiva;
 
     public Usuario() {
     }
 
+    public void establecerPassword(String password) {
+        this.sal = HashUtil.generarSal();
+        this.passwordHash = HashUtil.hashear(password, sal);
+    }
+
     public boolean autenticar(String password) {
-        return false;
+        if (password == null || passwordHash == null || sal == null) {
+            return false;
+        }
+        return HashUtil.coinciden(HashUtil.hashear(password, sal), passwordHash);
     }
 
     public void verificarPermiso(Permiso permiso) {
+        if (!sesionActiva) {
+            throw new AccesoDenegadoException("Debes iniciar sesion para realizar esta accion");
+        }
+        if (!tienePermiso(permiso)) {
+            throw new AccesoDenegadoException("No tienes el permiso " + permiso.getCodigo());
+        }
     }
 
     public boolean tienePermiso(Permiso permiso) {
-        return false;
+        if (permisos.contains(permiso)) {
+            return true;
+        }
+        return rol != null && rol.tienePermiso(permiso);
     }
 
     public void asignarPermiso(Permiso permiso) {
         permisos.add(permiso);
     }
 
-    public boolean iniciarSesion() {
-        return false;
+    public boolean iniciarSesion(String password) {
+        if (!activo || !autenticar(password)) {
+            return false;
+        }
+        this.sesionActiva = true;
+        return true;
     }
 
     public void cerrarSesion() {
+        this.sesionActiva = false;
+    }
+
+    public boolean isSesionActiva() {
+        return sesionActiva;
+    }
+
+    public String getSal() {
+        return sal;
+    }
+
+    public void setSal(String sal) {
+        this.sal = sal;
     }
 
     public void actualizarPerfil() {

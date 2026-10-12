@@ -5,12 +5,28 @@ import java.util.Set;
 
 public class Rol {
 
+    public static final String ADMINISTRADOR = "ADMINISTRADOR";
+    public static final String CLIENTE = "CLIENTE";
+
     private long id;
     private String nombre;
     private String descripcion;
     private Set<Permiso> permisos = new HashSet<>();
 
-    public Rol() {
+    public Rol() { }
+            public static Rol crearPorNombre(String nombre) {
+        Rol rol = new Rol();
+        rol.setNombre(nombre);
+        if ("ADMINISTRADOR".equals(nombre)) {
+            rol.agregarPermiso(new Permiso(Permiso.GESTIONAR_PRODUCTOS));
+            rol.agregarPermiso(new Permiso(Permiso.GESTIONAR_USUARIOS));
+            rol.agregarPermiso(new Permiso(Permiso.GESTIONAR_CUPONES));
+            rol.agregarPermiso(new Permiso(Permiso.VER_VENTAS));
+        } else if ("VENDEDOR".equals(nombre)) {
+            rol.agregarPermiso(new Permiso(Permiso.VER_VENTAS));
+        }
+        return rol;
+
     }
 
     public void agregarPermiso(Permiso permiso) {
