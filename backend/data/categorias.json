@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ropa",
+    "descripcion": "Prendas con variantes de color y talla"
+  },
+  {
+    "id": 2,
+    "nombre": "Termos",
+    "descripcion": "Termos de metal y de plastico"
+  },
+  {
+    "id": 3,
+    "nombre": "Papeleria",
+    "descripcion": "Plumas, cuadernos, stickers y pines"
+  },
+  {
+    "id": 4,
+    "nombre": "Accesorios",
+    "descripcion": "Llaveros, sombrillas, cubresol, tazas y pelotas anti estres"
+  },
+  {
+    "id": 5,
+    "nombre": "Peluches",
+    "descripcion": "Peluches de Leonel, la mascota de la universidad"
+  }
+]
