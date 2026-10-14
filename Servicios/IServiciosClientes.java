@@ -1,14 +1,22 @@
 package Servicios;
 
 import claseseguridad.Cliente;
+import claseseguridad.Usuario;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface IServiciosClientes {
 
-    void registrarCliente(Cliente cliente);
+    Cliente registrarCliente(String nombre, String email, String password);
 
-    Optional<Cliente> buscarPorId(String id);
+    Optional<Usuario> iniciarSesion(String email, String password);
 
-    void actualizarDatos(Object... args);
+    void cerrarSesion(Usuario usuario);
+
+    Optional<Usuario> buscarPorId(Long id);
+
+    List<Usuario> listarUsuarios();
+
+    void actualizarDatos(Usuario usuario);
 }

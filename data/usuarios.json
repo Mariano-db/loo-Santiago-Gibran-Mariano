@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "rol": "ADMINISTRADOR",
+    "nombre": "Carlos Montufar",
+    "username": "montufar@gmail.com",
+    "email": "montufar@gmail.com",
+    "passwordHash": "g2kX8q6uJ1ODYdrEd4gZmtSHbMZvnWi7p4hJ1BrzvT4=",
+    "sal": "TR2G9fnS3LPj7o9W/JAIBg==",
+    "telefono": null,
+    "activo": true,
+    "permisos": [
+      "VER_VENTAS",
+      "GESTIONAR_USUARIOS",
+      "GESTIONAR_PRODUCTOS"
+    ]
+  }
+]

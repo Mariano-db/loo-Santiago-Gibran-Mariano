@@ -6,6 +6,8 @@ public class Cupon {
 
     private Long id;
     private String codigo;
+    private TipoDescuento tipoDescuento;
+    private double valor;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private boolean activo;
@@ -14,7 +16,24 @@ public class Cupon {
     }
 
     public boolean esValido() {
-        return false;
+        return esValidoEn(LocalDate.now());
+    }
+
+    public boolean esValidoEn(LocalDate fecha) {
+        if (!activo) {
+            return false;
+        }
+        if (fechaInicio != null && fecha.isBefore(fechaInicio)) {
+            return false;
+        }
+        return fechaFin == null || !fecha.isAfter(fechaFin);
+    }
+
+    public double calcularDescuento(double monto) {
+        if (tipoDescuento == TipoDescuento.PORCENTAJE) {
+            return monto * valor / 100;
+        }
+        return Math.min(valor, monto);
     }
 
     public Long getId() {
@@ -31,6 +50,22 @@ public class Cupon {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }
+
+    public TipoDescuento getTipoDescuento() {
+        return tipoDescuento;
+    }
+
+    public void setTipoDescuento(TipoDescuento tipoDescuento) {
+        this.tipoDescuento = tipoDescuento;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
     public LocalDate getFechaInicio() {
